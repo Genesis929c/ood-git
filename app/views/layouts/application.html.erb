@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Job Composer</title>
+  <title>Git Version Control</title>
   <%= favicon_link_tag nil, href: OodAppkit.public.url.join('favicon.ico') %>
 
   <%= stylesheet_link_tag    "application", media: "all" %>
@@ -29,15 +29,14 @@
         </button>
         <ul class="navbar-breadcrumbs">
           <li><%= link_to OodAppkit.dashboard.title, OodAppkit.dashboard.url.to_s %></li>
-          <li><%= link_to "Job Composer", root_path %></li>
+          <li><%= link_to "Git Version Control", root_path %></li>
         </ul>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
-          <%= content_tag(:li, class: current_page?(root_path) ? "active" : "") { link_to "Jobs", root_path } %>
-          <%= content_tag(:li, class: current_page?(new_workflow_path) ? "active" : "") { link_to "Templates", new_workflow_path } %>
+          <%= content_tag(:li, class: current_page?(root_path) ? "active" : "") { link_to "Git", root_path } %>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
